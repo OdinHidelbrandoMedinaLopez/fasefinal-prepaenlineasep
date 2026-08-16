@@ -1,0 +1,486 @@
+@font-face {
+    font-family: "FuenteTitulos";
+    src: url(fonts/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: "FuenteTexto";
+    src: url(fonts/Ubuntu-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+h1, h2 {
+    font-family: "FuenteTitulos", sans-serif;
+}
+
+p, a, b, ol {
+    font-family: "FuenteTexto", sans-serif;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    font-family: "FuenteTexto", sans-serif;
+    background-color: white;
+}
+
+th {
+    background-color: lightgray;
+    font-family: "FuenteTexto", sans-serif;
+}
+
+ul {
+    padding-inline-start: 20px;
+    margin: 0px;
+}
+
+.header_main {
+    height: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 24px;
+    z-index: 30;
+}
+
+.nav_main {
+    display: flex;
+    gap: 10px;
+}
+
+.iniciar_header {
+    display: flex;
+    gap: 10px;
+}
+
+.contactar {
+    background: rgba(255, 140, 90, 0.15);
+    padding: 8px;
+    border-radius: 600px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.implementar_plan {
+    color: white;
+    background: rgba(0, 0, 0, 1);
+    padding: 8px;
+    border-radius: 600px;
+    cursor: pointer;
+}
+
+.principal {
+    height: 120vh;
+    background: linear-gradient(180deg, #ffffff 0%, #fff0ef 58%, #ffdede 100%);
+    border-radius: 0 0 40px 40px;
+    overflow: hidden;
+    text-align: center;
+    position: relative
+}
+
+.etiqueta_principal {
+    margin-top: 100px;
+}
+
+.titulo_principal {
+    max-width: 900px;
+    margin: 10px auto;
+    font-size: 2.5em;
+}
+
+.justificacion_principal {
+    max-width: 950px;
+    margin: 32px auto;
+    font-size: 18px;
+}
+
+.objetivos {
+    padding: 0px 120px;
+}
+
+.primer_objetivos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.titulo_objetivo_general {
+    font-size: 32px;
+}
+
+.texto_objetivo_general {
+    max-width: 500px;
+}
+
+.segundo_objetivos {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.titulo_objetivo_especificos {
+    font-size: 32px;
+}
+
+.so_container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.objetivos_article {
+    display: flex;
+    box-shadow: #4b0000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    padding: 0px 25px;
+    text-align: center;
+}
+
+.oa_icon {
+    font-size: 120px;
+}
+
+.titulo_metas {
+    margin-top: 75px;
+    font-size: 32px;
+}
+
+.metas_ul {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.meta_li {
+    display: flex;
+    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    padding: 25px;
+}
+
+.audio-tablas {
+    height: auto;
+    background: linear-gradient(180deg, #ffdede 0%, #fff0ef 58%, #ffffff 100%);
+    border-radius: 40px 40px 0px 0px;
+    overflow: hidden;
+    padding: 0px 120px;
+    position: relative
+}
+
+.audio_text {
+    margin-top: 70px;
+}
+
+.tabla1_text {
+    margin-top: 50px;
+}
+
+.tablarecursos_container {
+    background-color: crimson;
+    padding: 80px 0px;
+}
+
+.TablaRecursos {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+.DiagramaDeFlujo {
+    display: block;
+    position: relative;
+    width: 75vw;
+    height: auto;
+    top: 20px;
+    margin: 0px auto;
+}
+
+.video {
+    margin: 90px 0px;
+}
+
+.DiagramaDePerfiles {
+    display: block;
+    position: relative;
+    width: 75vw;
+    height: auto;
+    top: 20px;
+    margin: 0px auto;
+}
+
+.PosiblesEscenarios {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0px auto;
+}
+
+.diagramas {
+    padding: 0px 120px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.df_text {
+    margin-top: 75px;
+}
+
+.df_helper {
+    margin-top: 50px;
+}
+
+.diagrama_colaboradores {
+    padding: 0px 120px;
+}
+
+.phone-row {
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    border-radius: 8px;
+    margin: 75px 0px;
+}
+
+.tiny-phone {
+    width: 52px;
+    height: 100px;
+    border: 2px solid #260d12;
+    border-radius: 10px;
+    transform: rotate(-8deg)
+}
+
+.tiny-phone:nth-child(2) {
+    transform: rotate(4deg);
+    height: 106px
+}
+
+.tiny-phone:nth-child(3) {
+    transform: rotate(10deg)
+}
+
+.pink {
+    background: linear-gradient(#ffc5cc, #4b1630)
+}
+
+.cream {
+    background: linear-gradient(#fff, #f6d6d2)
+}
+
+.rose {
+    background: radial-gradient(circle, #fff0ec, #ed9fa9)
+}
+
+.diagrama_gantt {
+    padding: 80px 120px;
+}
+
+.escenarios_predichos {
+    padding: 0px 120px;
+    margin-top: 75px;
+}
+
+.estandares {
+    padding: 75px 120px;
+}
+
+footer {
+    background: linear-gradient(#ffffff, #ffe4e3);
+    padding: 40px 14% 28px;
+    min-height: 470px;
+    position: relative
+}
+
+.footer-logo {
+    font-size: 80px;
+    text-align: center;
+    line-height: .90;
+    font-weight: 700;
+    color: #4b0000;
+    font-family: "FuenteTexto", sans-serif;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 28px;
+    font-size: 16px
+}
+
+.socials {
+    margin: 18px 0
+}
+
+.footer-links {
+    position: absolute;
+    right: 14%;
+    bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-links b {
+    font-size: 24px
+}
+
+.footer-links a {
+    display: block;
+    font-size: 18px;
+    margin-top: 7px;
+    color: #775959;
+    text-decoration: none;
+}
+
+.referencias {
+    padding: 0px 120px;
+    padding-bottom: 120px;
+}
+
+.hero-device {
+    position: relative;
+    
+    
+    width: 270px;
+    height: 430px;
+    
+}
+
+.hand {
+    position: absolute;
+    width: 125px;
+    height: 310px;
+    right: 26px;
+    bottom: -55px;
+    background: linear-gradient(155deg, #b7765d, #5b281e 65%, #35140f);
+    border-radius: 50% 45% 28% 40%;
+    transform: rotate(-20deg);
+    filter: blur(.2px);
+    z-index: 1
+}
+
+.phone {
+    position: absolute;
+    border: 3px solid #13070a;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 13px 30px #42000030
+}
+
+.p1 {
+    width: 108px;
+    height: 205px;
+    left: 81px;
+    bottom: 65px;
+    transform: rotate(-3deg);
+    z-index: 3;
+    background: #170a13
+}
+
+.notch {
+    position: absolute;
+    top: 5px;
+    left: 37px;
+    width: 34px;
+    height: 7px;
+    background: #080609;
+    border-radius: 9px;
+    z-index: 4
+}
+
+.screen {
+    height: 100%;
+    padding: 23px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px
+}
+
+.dark-screen {
+    background: white;
+    color: #fff0f2;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+.dark-screen b {
+    font-size: 12px
+}
+
+.dark-screen span {
+    font-size: 8px;
+    line-height: 1.1
+}
+
+.dark-screen i {
+    font-size: 34px;
+    color: #ff9ca4
+}
+
+.float-note {
+    position: absolute;
+    background: #fff;
+    border-radius: 8px;
+    padding: 7px 10px;
+    font-size: 7px;
+    line-height: 1.15;
+    box-shadow: 0 4px 16px #52000012;
+    z-index: 5;
+    text-align: left
+}
+
+.float-note small {
+    font-size: 6px
+}
+
+.n1 {
+    right: -3px;
+    top: 110px
+}
+
+.n2 {
+    right: -10px;
+    top: 205px
+}
+
+.metas_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.metas_subcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
